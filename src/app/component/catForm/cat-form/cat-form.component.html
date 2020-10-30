@@ -1,0 +1,42 @@
+<mat-card class="card">
+
+    <mat-card-header>
+        <h3>Bienvenue dans ce formulaire de création de chat</h3>
+    </mat-card-header>
+
+    <mat-card-content>
+        <form [formGroup]="catForm" (ngSubmit)="onSubmit()">
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Nom</mat-label>
+                <input type="text" matInput placeholder="nom" formControlName="nom">
+            </mat-form-field>
+        
+            <mat-form-field appearance="legacy">
+                <mat-label>Age</mat-label>
+                <input type="text" matInput placeholder="age" formControlName="age">
+            </mat-form-field>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Race</mat-label>
+                <input type="text"  matInput placeholder="race" formControlName="race">
+            </mat-form-field>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Vivant</mat-label>
+                <select matNativeControl formControlName="vivant">
+                    <option [ngValue]="true">oui</option>
+                    <option [ngValue]="false">non</option>
+                </select>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" type="submit">Envoyer</button>
+        </form>
+    </mat-card-content>
+    
+</mat-card>
+
+
+
+
+

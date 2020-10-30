@@ -1,0 +1,23 @@
+<mat-card *ngFor="let cat of catList" class="card">
+    <mat-card-header class="card_header">
+        <mat-card-title class="title_header">{{cat.nom}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div>
+            <label><b>Age :</b></label>
+            <h5>{{cat.age}} ans</h5>
+        </div>
+        <div>
+            <label><b>Race :</b></label>
+            <h5>{{cat.race}}</h5>
+        </div>
+
+        <div>
+            <label><b>Vivant :</b></label>
+            <h5>{{cat.vivant}}</h5>
+        </div>
+        <div>
+            <button mat-raised-button color="warn" (click)="supprimer(cat.id)">Supprimer</button>
+        </div>
+    </mat-card-content>
+</mat-card>

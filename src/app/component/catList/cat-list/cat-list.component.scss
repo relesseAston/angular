@@ -1,0 +1,23 @@
+.card {
+    width: 200px;
+    display: inline-block;    
+    padding: 0px;
+    margin:5px;
+    border-style: solid;
+    background-color: #A9A9A9;
+}
+
+.card_header {
+    background-color: #ADD8E6;
+}
+
+.title_header {
+    margin-left: 55px;
+}
+
+label {
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}

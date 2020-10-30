@@ -1,0 +1,32 @@
+{
+  "cats": [
+    {
+      "id": 0,
+      "nom": "chat0",
+      "age": 5,
+      "race": "race0",
+      "vivant": true
+    },
+    {
+      "id": 1,
+      "nom": "chat1",
+      "age": 8,
+      "race": "race1",
+      "vivant": false
+    },
+    {
+      "id": 2,
+      "nom": "chat2",
+      "age": 2,
+      "race": "race2",
+      "vivant": true
+    },
+    {
+      "id": 3,
+      "nom": "chat3",
+      "age": 9,
+      "race": "race3",
+      "vivant": false
+    }
+  ]
+}
